@@ -1,0 +1,75 @@
+@import './base.css';
+@import './colors.css';
+@import './fonts/index.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global elements styles */
+
+body {
+  font-family: 'IranYekan','Shabnam','Yekan', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+
+  @screen md {
+    font-size: 20px;
+  }
+}
+
+input, textarea {
+  @apply outline-none;
+}
+
+#app {
+  @apply flex flex-col min-h-screen;
+}
+
+span {
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 150%;
+
+  @screen md {
+    font-size: 48px;
+  }
+
+  @screen lg {
+    font-size: 56px;
+  }
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 150%;
+
+  @screen md {
+    font-size: 32px;
+  }
+
+  @screen lg {
+    font-size: 36px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 150%;
+
+  @screen md {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 150%;
+}
